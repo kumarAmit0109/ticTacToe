@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "en" class = "font-rubik">
+    <head>
+        <title>Tic Tac Toe</title>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0"/>
+        <link rel = "stylesheet" href = "./styles.css"/>
+        <link rel = "icon" href = "./assets/favicon.png"/>
+    </head>
+    <body class = "overflow-hidden">
+        <div class = "w-full min-h-screen overflow-x-hidden overflow-y-auto bg-[url('./assets/background.jpg')] bg-cover bg-no-repeat">
+            <div id = "preloader" class = "w-full h-screen bg-white fixed inset-0 z-10 flex justify-center items-center">
+                <img src="./assets/preloader.png" class = "w-24 animate-bounce"/>
+            </div>
+
+            <div class = "w-11/12 md:w-10/12 max-w-2xl mx-auto py-16 flex flex-col items-center gap-y-8">
+                <div id = "game-status" class = "font-medium text-xl text-white text-center bg-blackWith33 px-3 py-2 rounded-lg border tracking-wide cursor-default"></div>
+
+                <div class = "w-5/6 xsm:w-2/3 max-w-sm aspect-square border rounded-lg bg-blackWith33 p-4 xsm:p-6 sm:p-8 grid grid-cols-3">
+                    <div class = "w-full aspect-square flex justify-center items-center font-medium text-white text-5xl sm:text-6xl border-r-2 border-b-2 transition-colors duration-300 ease-in boxes"></div>
+                    
+                    <div class = "w-full aspect-square flex justify-center items-center font-medium text-white text-5xl sm:text-6xl border-b-2 transition-colors duration-300 ease-in boxes"></div>
+
+                    <div class = "w-full aspect-square flex justify-center items-center font-medium text-white text-5xl sm:text-6xl border-b-2 border-l-2 transition-colors duration-300 ease-in boxes"></div>
+
+                    <div class = "w-full aspect-square flex justify-center items-center font-medium text-white text-5xl sm:text-6xl border-r-2 transition-colors duration-300 ease-in boxes"></div>
+
+                    <div class = "w-full aspect-square flex justify-center items-center font-medium text-white text-5xl sm:text-6xl transition-colors duration-300 ease-in boxes"></div>
+
+                    <div class = "w-full aspect-square flex justify-center items-center font-medium text-white text-5xl sm:text-6xl border-l-2 transition-colors duration-300 ease-in boxes"></div>
+
+                    <div class = "w-full aspect-square flex justify-center items-center font-medium text-white text-5xl sm:text-6xl border-t-2 border-r-2 transition-colors duration-300 ease-in boxes"></div>
+
+                    <div class = "w-full aspect-square flex justify-center items-center font-medium text-white text-5xl sm:text-6xl border-t-2 transition-colors duration-300 ease-in boxes"></div>
+
+                    <div class = "w-full aspect-square flex justify-center items-center font-medium text-white text-5xl sm:text-6xl border-t-2 border-l-2 transition-colors duration-300 ease-in boxes"></div>
+                </div>
+
+                <button id = "new-game-button" class = "font-medium text-xl text-white text-center tracking-wide bg-blackWith33 px-4 py-1.5 border rounded-lg hover:text-black hover:bg-white transition-colors duration-300 ease-in">New Game</button>
+
+                <button id = "restart-game-button" class = "font-medium text-xl text-white text-center tracking-wide bg-blackWith33 px-4 py-1.5 border rounded-lg hover:text-black hover:bg-white transition-colors duration-300 ease-in">
+                    <span class = "text-xl">Restart Game</span>
+                    <i class="fa-solid fa-rotate-right text-lg"></i>
+                </button>
+            </div>
+        </div>
+        <script type = "module" src = "./index.js"></script>
+        <script src="https://kit.fontawesome.com/463da5afdf.js" crossorigin="anonymous"></script>
+    </body>
+</html>
